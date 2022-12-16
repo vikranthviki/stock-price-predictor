@@ -9,7 +9,7 @@ from PIL import Image
    
     
 
-code = marshal.loads(open('model.sav','rb').read())
+code = marshal.loads(open('model.sav','rb'))
 func= types.FunctionType(code, globals())
 f_high=[]
 f_low=[]
