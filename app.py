@@ -8,7 +8,7 @@ import yfinance as yf
 from PIL import Image
    
     
-t=open('C:/Users/vikranth/OneDrive/Desktop/programming/stock_project/model.sav','rb').read()
+t=open('model.sav','rb').read()
 code = marshal.loads(t)
 func= types.FunctionType(code, globals())
 f_high=[]
@@ -35,7 +35,7 @@ def add_bg_from_local(image_file):
 
 def main():
     st.set_page_config(page_title='Estimator using SARIMAX ',page_icon="🕗", layout="centered", initial_sidebar_state="auto", menu_items=None)
-    im ="C:/Users/vikranth/OneDrive/Desktop/programming/stock_project/Stock_bb.jpg"
+    im ="Stock_bb.jpg"
     add_bg_from_local(im)    
     st.title("Asset Price Estimator using time series ")
     Header= '<p style="font-family:Georgia; color:maroon; font-size: 25px;">Enter the company or asset ticker to the get stock prediction for specified days. You can also get the trade strtegy using technical analysis tools 💹</p>'
