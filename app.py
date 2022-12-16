@@ -8,8 +8,8 @@ import yfinance as yf
 from PIL import Image
    
     
-t=open('model.sav','rb').read()
-code = marshal.loads(t)
+
+code = marshal.loads(open('model.sav','rb').read())
 func= types.FunctionType(code, globals())
 f_high=[]
 f_low=[]
