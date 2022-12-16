@@ -9,8 +9,8 @@ from PIL import Image
    
     
 
-code = marshal.loads(open('model.sav','rb').read())
-func= types.FunctionType(code, globals())
+#code = marshal.loads(open('model.sav','rb').read())
+#func= types.FunctionType(code, globals())
 f_high=[]
 f_low=[]
 f_open=[]
@@ -84,10 +84,10 @@ def main():
         def comp():
             with st.spinner('Analysing...'):
                 st.session_state.load_state = False
-                pred_high=func(df['High'],d)
-                pred_low=func(df['Low'],d)
-                pred_open=func(df['Open'],d)
-                pred_close=func(df['Close'],d)
+                pred_high=forecast(df['High'],d)
+                pred_low=forecast(df['Low'],d)
+                pred_open=forecast(df['Open'],d)
+                pred_close=forecast(df['Close'],d)
                 f_high.append(df['High'][len(df['High'])-1]) 
                 f_low.append(df['Low'][len(df['Low'])-1])
                 f_open.append(df['Open'][len(df['Open'])-1])
