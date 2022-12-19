@@ -358,7 +358,7 @@ def forecast(dat,period):
     
         for param in tqdm_notebook(parameters_list):
             try: 
-                model = SARIMAX(exog, order=(param[0], d, param[1]), seasonal_order=(param[2], D, param[3], s)).fit(disp=-1)
+                model = SARIMAX(exog, order=(param[0], d, param[1]), seasonal_order=(param[2], D, param[3], s)).fit()
             except:
                 continue
             
