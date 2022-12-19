@@ -14,8 +14,6 @@ import plotly.express as px
 import plotly.subplots as splt
 import time
 from sklearn.preprocessing import StandardScaler
-from tqdm import tqdm
-from tqdm import tqdm_notebook, tnrange
 import datetime
 from itertools import product
 from statsmodels.tsa.statespace.sarimax import SARIMAX
@@ -341,7 +339,7 @@ def forecast(dat,period):
     from sklearn.preprocessing import StandardScaler
     import numpy as np
     from itertools import product
-    from tqdm.notebook import tqdm
+    from tqdm import tqdm
     from tqdm import tqdm_notebook, tnrange
     def optimize_SARIMA(parameters_list, d, D, s, exog):
         """
