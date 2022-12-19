@@ -14,7 +14,7 @@ import plotly.express as px
 import plotly.subplots as splt
 import time
 from sklearn.preprocessing import StandardScaler
-from tqdm.notebook import tqdm
+from tqdm import tqdm
 from tqdm import tqdm_notebook, tnrange
 import datetime
 from itertools import product
