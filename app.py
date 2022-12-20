@@ -42,7 +42,7 @@ def main():
         st.stop()
     d = st.slider('How  many days to be predicted', 1, 10)
     time.sleep(3)    
-    df=yf.download(tickers=com,period='6m',interval='1d')   
+    df=yf.download(tickers=com,period='6mo',interval='1d')   
     df=df.reset_index()
     df.columns=['Date','Open','High', 'Low' ,'Close','Adj Close','Volume']
     st.write('Predict',com, 'for' , d , 'days')
