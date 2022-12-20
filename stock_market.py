@@ -328,7 +328,7 @@ def forecast(dat,period):
     
         for param in tqdm_notebook(parameters_list):
             try: 
-                model = SARIMAX(exog, order=(param[0], d, param[1]), seasonal_order=(param[2], D, param[3], s)).fit()
+                model = SARIMAX(exog, order=(param[0], d, param[1]), seasonal_order=(param[2], D, param[3], s)).fit(low_memory=True)
             except:
                 continue
             
@@ -379,7 +379,7 @@ def forecast(dat,period):
     print(k['(p,q)x(P,Q)'][f_aic])
     
     print(k)
-    best_model = SARIMAX(train, order=(k['(p,q)x(P,Q)'][f_aic][0], 1, k['(p,q)x(P,Q)'][f_aic][1]), seasonal_order=(k['(p,q)x(P,Q)'][f_aic][2], 1, k['(p,q)x(P,Q)'][f_aic][2], 4)).fit(dis=-1)
+    best_model = SARIMAX(train, order=(k['(p,q)x(P,Q)'][f_aic][0], 1, k['(p,q)x(P,Q)'][f_aic][1]), seasonal_order=(k['(p,q)x(P,Q)'][f_aic][2], 1, k['(p,q)x(P,Q)'][f_aic][2], 4)).fit(low_memory=True)
     print(best_model.summary())
     pred= best_model.fittedvalues
     forecast = best_model.predict(start=train.shape[0], end=train.shape[0] + period)
