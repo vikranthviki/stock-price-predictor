@@ -1,16 +1,11 @@
 import datetime
 import time
 import pandas as pd
-import marshal,types
 import streamlit as st
 from stock_market import *
 import yfinance as yf
 from PIL import Image
    
-    
-
-#code = marshal.loads(open('model.sav','rb').read())
-#func= types.FunctionType(code, globals())
 f_high=[]
 f_low=[]
 f_open=[]
@@ -47,7 +42,7 @@ def main():
         st.stop()
     d = st.slider('How  many days to be predicted', 1, 10)
     time.sleep(3)    
-    df=yf.download(tickers=com,period='1y',interval='1d')   
+    df=yf.download(tickers=com,period='6m',interval='1d')   
     df=df.reset_index()
     df.columns=['Date','Open','High', 'Low' ,'Close','Adj Close','Volume']
     st.write('Predict',com, 'for' , d , 'days')
