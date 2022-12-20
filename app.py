@@ -75,8 +75,8 @@ def main():
     
 
     if st.button('Desicion to buy or sell and prediction') or st.session_state.load_state : #or st.session_state.load_state:
-      @st.cache(ttl=24*3600)  
-      def comp():
+        @st.cache(ttl=24*3600)  
+        def comp():
             with st.spinner('Analysing...'):
                 st.session_state.load_state = False
                 pred_high=forecast(df['High'],d)
