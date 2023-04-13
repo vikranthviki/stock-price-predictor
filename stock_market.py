@@ -251,7 +251,7 @@ def VWAP(hi,lo,cl,v,Trend):
     for i in range(len(Trend)):
         if vwap.iloc[i]<cl.iloc[i] and Trend.iloc[i]=='Bullish':
             signal.append('Buy')
-        elif vwap.iloc[i]>cl.iloc[i] and Trend.iloc[i]=='Bullish' :
+        elif vwap.iloc[i]>cl.iloc[i] and Trend.iloc[i]=='Bearish' :
             signal.append('Sell')
         #elif vwap.iloc[i]>df['Close'].iloc[i] and Trend.iloc[i]=='Bearish':
             #signal.append('Buy')
