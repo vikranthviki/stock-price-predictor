@@ -7,5 +7,5 @@ SARIMA Price Forecasting: The SARIMA model forecasts future asset prices based o
 MACD Strategy: Users can apply the Moving Average Convergence Divergence (MACD) trading strategy to generate buy/sell signals.
 VWAP Strategy: The Volume-Weighted Average Price (VWAP) strategy can be used to identify potential entry/exit points.
 Heikin-Ashi Strategy: Users can apply the Heikin-Ashi strategy, which uses modified candlestick charts, to analyze price trends.
-Once the application runs in your browser, you can get historical data and apply various strategies for long and sort term trading.
+Once the application runs in your browser, you can get historical data and apply strategies for long and short term trading.
 
