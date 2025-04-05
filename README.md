@@ -2,10 +2,27 @@
 This web application built with Streamlit utilizes the SARIMA model and various trading strategies like MACD, VWAP, and Heikin-Ashi to estimate stock market asset prices. The application provides users with a user-friendly interface to explore historical price data, generate price forecasts, and analyze different trading strategies.
 
 **Features**
-Historical Data Visualization: Users can use interactive charts to visualize historical stock market asset prices.
-SARIMA Price Forecasting: The SARIMA model forecasts future asset prices based on historical data.
-MACD Strategy: Users can apply the Moving Average Convergence Divergence (MACD) trading strategy to generate buy/sell signals.
-VWAP Strategy: The Volume-Weighted Average Price (VWAP) strategy can be used to identify potential entry/exit points.
-Heikin-Ashi Strategy: Users can apply the Heikin-Ashi strategy, which uses modified candlestick charts, to analyze price trends.
-Once the application runs in your browser, you can get historical data and apply strategies for long and short term trading.
+Sure! Here's a polished and professional version of your content for a README file:
+
+---
+
+
+### 🔍 Key Features
+
+- **Interactive Historical Data Visualization**  
+  Visualize historical price movements of stock market assets with dynamic, interactive charts.
+
+- **📊 SARIMA Price Forecasting**  
+  Forecast future asset prices using the Seasonal AutoRegressive Integrated Moving Average (SARIMA) model, based on historical data trends.
+
+- **📈 MACD Strategy**  
+  Apply the Moving Average Convergence Divergence (MACD) indicator to generate buy and sell signals based on momentum and trend direction.
+
+- **⚖️ VWAP Strategy**  
+  Utilize the Volume-Weighted Average Price (VWAP) strategy to determine potential entry and exit points, focusing on price and volume data.
+
+- **Heikin-Ashi Strategy**  
+  Analyze price trends with Heikin-Ashi candlesticks, a smoothed variation of traditional candlestick charts that helps to identify trend direction more clearly.
+
+
 
